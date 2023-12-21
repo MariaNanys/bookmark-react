@@ -1,0 +1,30 @@
+.header_listener {
+    width: 100vw;
+    height: 30px;
+}
+
+.pageHeader_menu {
+    height: 45px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    @include XL {
+        max-width: 1105px;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+.header_socialmedia {
+    display: none;
+    position: absolute;
+    z-index: 11;
+    bottom: 100px;
+    left: 40%;
+    width: 70px;
+    gap: 40px;
+    align-items: center;
+}
+.show {
+    display: flex;
+}

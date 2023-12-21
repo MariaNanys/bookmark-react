@@ -1,0 +1,105 @@
+.NavMenu {
+    width: 100%;
+    height: 100%;
+}
+.hidden {
+    display: none;
+    @include XL {
+        display: flex;
+    }
+}
+.menu-list {
+    position: absolute;
+    width: 375px;
+    height: 100vh;
+    text-transform: uppercase;
+    padding-top: 145px;
+    right: 0;
+    background-color: $color-neutral-blue;
+    opacity: 90%;
+    z-index: 2;
+    top: -40px;
+    @include XL {
+        background-color: transparent;
+        position: inherit;
+        display: flex;
+        align-items: center;
+        opacity: 100%;
+        width: auto;
+        height: 45px;
+        padding: 0;
+        justify-content: center;
+        gap: 45px;
+    }
+
+    li {
+        margin: 0 32px;
+        text-align: center;
+        padding: 20px 0;
+        letter-spacing: 3px;
+        border-top: 0.5px hsl(229, 8%, 60%, .4) solid;
+        @include XL {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu__item {
+        color: #eee;
+        text-decoration: none;
+        @include XL {
+            color: $color-neutral-blue; 
+            font-size: 12px;  
+            letter-spacing: 2px;
+            &:hover {
+                color: $color-main-red;
+            }
+        }
+        }     
+    }
+    :nth-child(3) {
+        border-bottom: 0.5px hsl(229, 8%, 60%, .4) solid;
+        @include XL {
+            border: none;
+        }
+    }
+    .nav_item_login {
+        width: 305px;
+        height: 45px;
+        margin: 16px auto 0;
+        padding: 0;
+        border: 2px solid white !important;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include XL {
+            width: 110px;
+            margin: 0;
+            height: 40px;
+            background-color: $color-main-red;
+            border: none !important;
+            color: white !important;
+            justify-content: center;
+        align-items: center;
+            &:hover {
+                border: 2px solid $color-main-red !important;  
+                background-color: transparent;
+                width: 106px;
+                color: $color-main-red !important;
+            }
+        }
+        .menu__item_login {
+            color: white;
+            text-decoration: none;
+            @include XL {
+                padding: 13px 26px;
+                font-size: 14px;
+                &:hover {
+                    color: $color-main-red;
+                }
+            }
+        }   
+    }
+
+}

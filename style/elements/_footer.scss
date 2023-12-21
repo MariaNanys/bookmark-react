@@ -1,0 +1,64 @@
+.Footer_content {
+    height: 255px;
+    background-color: $color-neutral-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    @include XL {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+        height: 90px;
+        padding: 0;
+    }
+}
+.footer_logo {
+    margin-bottom: 40px;
+    & svg[fill] {
+        fill: white;
+    }
+    @include XL {
+        margin-bottom: 0;
+    }
+}
+.footer_menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    letter-spacing: 0.1rem;
+    align-items: center;
+    margin-bottom: 40px;
+    @include XL {
+        flex-direction: row;
+        margin-bottom: 0;
+        gap: 40px;
+    }
+}
+.footer_menu__item {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    @include XL {
+        font-size: 12px;
+        &:hover {
+            color: $color-main-red;
+            cursor: pointer;
+        }
+    }
+}
+.footer_socialmedia {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+    @include XL {
+        margin-left: 32.25vw;
+        cursor: pointer; 
+        .icon_facebook:hover path[fill], .icon_twitter:hover path[fill] {
+        fill: hsl(0, 94%, 66%);
+        
+    }
+    }
+}

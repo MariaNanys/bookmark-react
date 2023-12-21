@@ -1,0 +1,21 @@
+.logo {
+    height: 15px;
+    @include XL {
+        margin-left: -15px;
+    }
+    
+
+    .logo_img {
+        padding-left: 18px;
+        position: relative;
+        z-index: 10;
+        width: 150px;    
+        filter: invert(100%) sepia(77%) saturate(0%) hue-rotate(117deg) brightness(105%) contrast(100%);
+        color: white;
+    }
+    .logo_img_closed {
+        filter: none;
+        padding-left: 18px;
+        width: 150px;
+    }
+}

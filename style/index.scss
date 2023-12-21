@@ -1,0 +1,35 @@
+@import "/style/generic/reset";
+@import "/style/variables/colors";
+@import "/style/variables/breakpoints";
+@import "/style/mixins/breakpoints";
+
+@import "/style/elements/page-header";
+@import "/style/elements/popup-modal-features";
+@import "/style/elements/nav-logo";
+@import "/style/elements/nav-menu";
+@import "/style/elements/burger-btn";
+@import "/style/elements/main-page";
+@import "/style/elements/features";
+@import "/style/elements/features-slider";
+@import "/style/elements/downloads";
+@import "/style/elements/faq";
+@import "/style/elements/newsletter";
+@import "/style/elements/footer";
+
+@import 'https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap';
+
+:root {
+    font-family: 'Rubik', sans-serif;
+    background-color: white;
+}
+p {
+    font-size: 15px;
+    color: $color-neutral-grey;
+    font-weight: 400;
+    line-height: 1.65;
+    width: 80vw;
+    @include XL {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+}

@@ -1,0 +1,93 @@
+.Downloads_content {
+    margin-top: 73px;
+    margin-bottom: 135px;
+}
+.downloads__title_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    @include XL {
+        width: 37.5vw;
+        margin: calc(160px - 73px - 40px) auto 60px;
+    }
+
+    h2 {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+    p {
+        @include XL {
+            width: auto;
+        }
+    }
+}
+.downloads__versions_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    @include XL {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 450px;
+        width: 900px;
+        margin:  0 auto;
+    }
+}
+.download_item {
+    width: 280px;
+    height: 324px;
+    box-shadow:  0px 20px 20px rgb(237, 236, 240);
+    border-radius: 15px;
+    padding-top: 58px;
+    p {
+        margin-bottom: 25px;
+        text-align: center;
+        width: auto;
+        margin-top: 5px;
+    }
+}
+.downloads__version_firefox {
+    @include XL {
+        align-self: center;
+    }
+}
+.downloads__version_opera {
+    @include XL {
+        align-self: flex-end;
+    }
+}
+.icon {
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $color-neutral-blue;
+}
+
+.downloads_btn {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    width: 233px;
+    height: 47px;
+    background-color: $color-main-blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 18px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    @include XL {
+        &:hover {
+            color: $color-main-blue;
+            background-color: transparent;
+             border: 3px solid $color-main-blue;
+        }
+    }
+}

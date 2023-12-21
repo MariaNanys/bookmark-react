@@ -1,0 +1,124 @@
+.Newsletter_content {
+    color: white;
+    background-color: $color-main-blue;
+    height: calc(360px - 70px);
+    padding-top: 70px;
+    h2 {
+        color: white;
+        margin: 5px auto 20px;
+        font-weight: 400;
+        text-align: center;
+        width: 85vw;
+        @include XL {
+            width: 28.5vw;
+            font-weight: 500;
+        }
+    }
+}
+.Newsletter_content_info {
+    letter-spacing: 0.4rem;
+    width: 100vw;
+    font-size: 12px;
+    text-align: center;
+    p {
+        margin: 0 auto;
+        font-size: 12px;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.newsletter_input_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @include XL {
+       flex-direction: row;
+       justify-content: center;
+       width: 450px;
+       margin: 0 auto;
+       padding-top: 15px;
+       gap: 15px;
+    }
+}
+.newsletter_inputs_error {
+    position: absolute;
+    width: 308px;
+    height: 72px;
+    background-color: $color-main-red;
+    border-radius: 5px;
+    top: -2px;
+    @include XL {
+        left: -1px;
+        top: 14px;
+    }
+}
+.newsletter_input {
+    width: 285px;
+    border: 2px solid $color-main-red;
+    height: 43px;
+    border-radius: 5px;
+    border: none;
+    z-index: 2;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    &::placeholder {
+        color: lightgray;
+    }
+    @include XL {
+        width: 286px;
+        height: 46px;
+    }
+}
+.icon_error {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 3;
+}.newsletter_error_text {
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+    font-size: 11px;
+    color: white;
+    font-style: italic;
+    font-weight: 400;
+}
+.hideError {
+    display: none;
+}
+
+.newsletter_btn {
+    width: 300px;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: $color-main-red;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+
+    @include XL {
+        margin: 0;
+        width: 130px;
+        height: 50px;
+        &:hover {
+            color: $color-main-red;
+            background-color: white;
+             border: 3px solid $color-main-red;
+        }
+    }
+}
+.move_btn {
+    margin-top: 40px;
+    width: 308px;
+    @include XL {
+        margin: 0;
+        width: 130px;
+        height: 50px;
+    }
+}

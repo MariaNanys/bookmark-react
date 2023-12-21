@@ -1,0 +1,139 @@
+.header_content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100% - 95px);
+    align-items: center;
+    
+    padding-bottom: 78px;
+    @include XL {
+        max-width: 1440px;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+        margin-right: 0;
+    }
+}
+
+.content-figure {
+    height: 204px;
+    width: 80vw;
+    background-color: $color-main-blue;
+    margin-top: 90px;
+    margin-left: 20vw;
+    border-top-left-radius: 90px 90px;
+    border-bottom-left-radius: 90px 90px;
+    position: relative;
+    float: right;
+    @include XL {
+        margin-top: 250px;
+        margin-left: 10vw;
+        width: 43.75vw;
+        height: 24vw;
+        border-top-left-radius: 175px 175px;
+        border-bottom-left-radius: 175px 175px;
+    }
+
+    .content-img-monitor { 
+        position: absolute;
+        bottom: 10px;
+        min-width: 350px;
+        max-width: 600px;
+        width: 93vw;
+        height: auto;
+        right: 2vw;
+        @include XL {
+            right: 3.5vw;
+            height: auto;
+            width: 46vw;
+            max-width: 60vw;
+            bottom: 25px;
+        }
+    }
+}
+
+
+.header_content__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    @include XL {
+        width: 35vw;
+        text-align: left;
+        margin-top: 65px;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.5;
+        width: 74vw;
+        color: $color-neutral-blue;
+        @include XL {
+            font-size: 47px;
+            width: auto;
+            line-height: 1.1;
+            letter-spacing: 1px;
+        }
+    }
+    p {
+        width: 75vw;
+        margin: 10px 0 30px;
+        @include XL {
+            width: auto;
+            margin: 30px 0 35px;
+        }
+    }
+    .header_content__buttons {
+        display: flex;
+        gap: 15px;
+        width: 100vw;
+        justify-content: center;
+        align-content: center;
+        @include XL {
+            width: 33vw;
+            justify-content: flex-start;
+            margin-left: -20px;
+        }
+
+        a {
+            display: flex;
+            width: 152px;
+            height: 48px;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 500;
+            box-shadow:  0px 3px 10px rgb(211, 211, 211);
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                width: 146px;
+                height: 42px;
+                cursor: pointer; 
+                background-color: transparent;
+            }
+            @include XL {
+                width: 165px;
+            }
+        }
+    
+        :last-child {
+            background-color: rgb(244, 243, 243);
+            color: hsl(236, 7%, 40%);
+            border-radius: 7px;
+            &:hover { 
+                border: 3px solid hsl(236, 7%, 40%);
+            }
+        }
+    }
+}
+.btn {
+    background-color: $color-main-blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    &:hover { 
+        border: 3px solid $color-main-blue;
+        color: $color-main-blue;
+    }
+}

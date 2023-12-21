@@ -1,0 +1,32 @@
+.features_title__text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 40px;
+    padding-top: 70px;
+    width: 74vw;
+    @include XL {
+        padding-top: 16px;
+        width: 36vw;
+        margin-bottom: 60px;
+    }
+    p {
+        margin-top: 10px;
+        @include XL {
+            width: auto;
+        }
+    }
+}
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    
+    color: $color-neutral-blue;
+    @include XL {
+        font-size: 32px;
+    }
+}
+
+
